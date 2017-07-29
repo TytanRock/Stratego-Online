@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public static class Manager {
-    public static IBaseFighter[] RedFighters = new IBaseFighter[30];
-    public static IBaseFighter[] BlueFighters = new IBaseFighter[30];
+    public static BaseUnit[] RedFighters = new BaseUnit[30];
+    public static BaseUnit[] BlueFighters = new BaseUnit[30];
 
     static int indexOfHighlightedRedObject = -1;
     static int indexOfHighlightedBlueObject = -1;
@@ -18,7 +18,7 @@ public static class Manager {
         else return blueFighterIndex++;
     }
 
-    public static void addToArray(IBaseFighter fighter)
+    public static void addToArray(BaseUnit fighter)
     {
         if(fighter.isRed)
         {
@@ -51,8 +51,6 @@ public static class Manager {
             for(int i = 0; i < redFighterIndex; i++)
             {
                 if (RedFighters[i].x == x && RedFighters[i].y == y) return true;
-                Debug.Log(RedFighters[i].x.ToString());
-                Debug.Log(RedFighters[i].y.ToString());
             }
         }
         else
