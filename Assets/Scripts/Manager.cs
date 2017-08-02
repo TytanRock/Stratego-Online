@@ -50,17 +50,43 @@ public static class Manager {
         {
             for(int i = 0; i < redFighterIndex; i++)
             {
-                if (RedFighters[i].x == x && RedFighters[i].y == y) return true;
+                if(RedFighters[i])
+                    if (RedFighters[i].x == x && RedFighters[i].y == y) return true;
             }
         }
         else
         {
             for(int i = 0; i < blueFighterIndex; i++)
             {
-                if (BlueFighters[i].x == x && BlueFighters[i].y == y) return true;
+                if (BlueFighters[i])
+                    if (BlueFighters[i].x == x && BlueFighters[i].y == y) return true;
             }
         }
         return false;
+    }
+
+    public static BaseUnit findFighter(int x, int y, bool isRed)
+    {
+        if (isRed)
+        {
+            for (int i = 0; i < redFighterIndex; i++)
+            {
+                if (RedFighters[i].x == x && RedFighters[i].y == y) return RedFighters[i];
+            }
+        }
+        else
+        {
+            for (int i = 0; i < blueFighterIndex; i++)
+            {
+                if (BlueFighters[i].x == x && BlueFighters[i].y == y) return BlueFighters[i];
+            }
+        }
+        return null;
+    }
+
+    public static void endTurn()
+    {
+        //Do something here
     }
 
 }

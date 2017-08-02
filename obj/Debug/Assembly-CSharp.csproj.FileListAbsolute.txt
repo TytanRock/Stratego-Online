@@ -8,11 +8,9 @@ D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\UnityEngine.HoloLens.dll
 D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\UnityEngine.Networking.dll
 D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\UnityEngine.TestRunner.dll
 D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\UnityEngine.UI.dll
-D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\UnityEngine.VR.dll
 D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\Mono.Cecil.dll
 D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\Unity.SerializationLogic.dll
 D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\Unity.DataContract.dll
-D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\ICSharpCode.NRefactory.dll
 D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\Unity.UNetWeaver.dll
 D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\Unity.CecilTools.dll
 D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\Mono.Cecil.Pdb.dll
@@ -25,8 +23,11 @@ D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\UnityEngine.TestRunner.xm
 D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\nunit.framework.xml
 D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\UnityEngine.Analytics.xml
 D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\UnityEngine.HoloLens.xml
-D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\UnityEngine.VR.xml
 D:\Users\nessc\Documents\StrategoOnline\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 D:\Users\nessc\Documents\StrategoOnline\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
 D:\Users\nessc\Documents\StrategoOnline\obj\Debug\Assembly-CSharp.dll
 D:\Users\nessc\Documents\StrategoOnline\obj\Debug\Assembly-CSharp.pdb
+D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\UnityEngine.Timeline.dll
+D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\ExCSS.Unity.dll
+D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+D:\Users\nessc\Documents\StrategoOnline\Temp\bin\Debug\UnityEngine.Timeline.xml

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class BaseUnit : MonoBehaviour
 {
@@ -11,9 +12,9 @@ public class BaseUnit : MonoBehaviour
 
     private void Start()
     {
+        baseStart();
         index = Manager.getCurrentIndex(isRed);
         Manager.addToArray(this);
-        baseStart();
     }
 
     private void Update()
@@ -34,5 +35,25 @@ public class BaseUnit : MonoBehaviour
     public virtual void highlightOff()
     {
         //Do nothing if it's not a Fighter
+    }
+
+    public void destroyThis()
+    {
+        Destroy(this.transform.parent.gameObject);
+    }
+
+    public virtual void highlightForFight(BaseFighter person)
+    {
+        //Must do something in derived class for fighting
+    }
+
+    public virtual void highlightForFightOff()
+    {
+        //Must do something in derived class for fighting
+    }
+
+    public virtual void callBack(int id)
+    {
+        //Must do something in derived class for fighting
     }
 }
