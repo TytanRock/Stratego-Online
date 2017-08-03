@@ -55,7 +55,6 @@ public class BaseFighter : BaseUnit
         if (!_isHighlighted && !_isHighlightedForFight)
         {
             //Keep track of if it's highlighted or not
-            _isHighlighted = true;
             Manager.switchHighlight(index, isRed);
 
             //Take highlight from other character
@@ -108,6 +107,7 @@ public class BaseFighter : BaseUnit
             if (southAttack) southAttack.highlightForFight(this);
             if (eastAttack) eastAttack.highlightForFight(this);
             if (westAttack) westAttack.highlightForFight(this);
+            _isHighlighted = true;
         }
         else if(_isHighlightedForFight)
         {
@@ -116,6 +116,7 @@ public class BaseFighter : BaseUnit
         else
         {
             Manager.switchHighlight(-1, isRed);
+            northAttack = southAttack = eastAttack = westAttack = null;
         }
     }
 
@@ -175,20 +176,18 @@ public class BaseFighter : BaseUnit
     {
         Debug.Log("Highlighted");
         _isHighlightedForFight = true;
-        Vector3 temp = new Vector3(0, 1, 0);
-        gameObject.transform.position = temp;
+        Vector3 temp = new Vector3(1.2f, 1.2f, 1.2f);
+        gameObject.transform.localScale = temp;
         caller = person;
-        thisAnimator.SetTrigger("MoveRaiseF");
     }
 
     public override void highlightForFightOff()
     {
         Debug.Log("UnHighlighted");
-        Vector3 temp = new Vector3(0, 0, 0);
-        gameObject.transform.position = temp;
+        Vector3 temp = new Vector3(1f, 1f, 1f);
+        gameObject.transform.localScale = temp;
         _isHighlightedForFight = false;
         caller = null;
-        thisAnimator.SetTrigger("RaiseNothingF");
     }
 
     private void checkFight(BaseUnit baseUnit, int id, int direction)
