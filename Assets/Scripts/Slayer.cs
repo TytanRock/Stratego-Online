@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Slayer : BaseFighter
 {
-    uint _SlayerStrength = 0;
+    private uint _SlayerStrength = 0;
     public int _x;
     public int _y;
     public bool _isRed;

@@ -196,7 +196,35 @@ public class BaseFighter : BaseUnit
         {
             if (baseUnit.index == id)
             {
-                if (baseUnit.strength > strength)
+                if(baseUnit.strength == 10 && strength == 0)
+                {
+                    //Dragon V Slayer, dragon loses
+                    Destroy(baseUnit.transform.parent.gameObject);
+                    switch(direction)
+                    {
+                        default: break;
+                        case 0: movingNorth = true; thisAnimator.SetTrigger("MoveNorthF"); break;
+                        case 1: movingEast = true; thisAnimator.SetTrigger("MoveEastF"); break;
+                        case 2: movingWest = true; thisAnimator.SetTrigger("MoveWestF"); break;
+                        case 3: movingSouth = true; thisAnimator.SetTrigger("MoveSouthF"); break;
+                    }
+                    Manager.endTurn();
+                }
+                else if(baseUnit.strength == 11 && strength == 3)
+                {
+                    //Trap V Dwarf, Trap loses
+                    Destroy(baseUnit.transform.parent.gameObject);
+                    switch (direction)
+                    {
+                        default: break;
+                        case 0: movingNorth = true; thisAnimator.SetTrigger("MoveNorthF"); break;
+                        case 1: movingEast = true; thisAnimator.SetTrigger("MoveEastF"); break;
+                        case 2: movingWest = true; thisAnimator.SetTrigger("MoveWestF"); break;
+                        case 3: movingSouth = true; thisAnimator.SetTrigger("MoveSouthF"); break;
+                    }
+                    Manager.endTurn();
+                }
+                else if (baseUnit.strength > strength)
                 {
                     //Destroy this, end turn
                     Manager.endTurn();
